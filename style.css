@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    padding: 20px;
+    line-height: 30px;
+}
+h1, h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+h1 {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    place-items: center;  
+    padding: 10px;  
+    transition: 1s;
+}
+.container > div {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+
+}
+.active{
+    background-color: brown;
+    flex: 1;
+}
+.recovery {
+    background-color: chartreuse;
+    flex: 1;
+}
+.vaccine{
+    background-color: cornflowerblue;
+    flex: 1;
+}
+.death{
+    background-color: darkcyan;
+    flex: 1;
+}
+.active:hover{
+     transform: scale(1.3);
+}  
+.recovery:hover{
+    transform: scale(1.3);
+}  
+.vaccine:hover{
+    transform: scale(1.3);
+}  
+.death:hover{
+    transform: scale(1.3);
+}  
+.container:hover {
+    transition: scale(1.3);
+}
